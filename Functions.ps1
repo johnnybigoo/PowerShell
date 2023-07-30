@@ -1,17 +1,17 @@
-function Display-Message-1() {
+function DisplayMessage1() {
     Write-Host "My Message"
 }
-function Display-Message-2($message) {
+function DisplayMessage2($message) {
     Write-Host $message
 }
 
-function Display-Message-3() {
+function DisplayMessage3() {
     [String]$Value1 = $args[0]
     [String]$Value2 = $args[1]
 
     Write-Host $Value1 $Value2
 }
-function Display-Message() {
+function DisplayMessage() {
     Param(
         [Parameter(Mandatory = $true)]
         [ValidateSet("Lexus", "Porsche", "Toyota", "Mercedes-Benz", "BMW", "Honda", "Ford", "GMC")]
