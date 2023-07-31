@@ -35,9 +35,11 @@ $customObject = [PSCustomObject]@{
 
 $customObject.messageThree
 
-# $customTernaryObject = [PSCustomObject]@{
-#     "messageOne" = (($a -gt $b) ? "Matched: This is message one" : "Not Matched: This is message one")
-#     "messageTwo" = (($a -lt $b)  ? "Matched: This is message two" : "Not Matched: This is message two")
-#     "messageThree" = (($a -eq $b) ? "Matched: This is message three" : "Not Matched: This is message three")
-# }
-# $customTernaryObject
+$customTernaryObject = [PSCustomObject]@{
+    "messageOne" = (($a -gt $b) ? "Matched: This is message one" : "Not Matched: This is message one")
+    "messageTwo" = (($a -lt $b)  ? "Matched: This is message two" : "Not Matched: This is message two")
+    "messageThree" = (($a -eq $b) ? "Matched: This is message three" : "Not Matched: This is message three")
+}
+
+    
+$customTernaryObject.messageTwo
